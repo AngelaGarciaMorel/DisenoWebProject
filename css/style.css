@@ -1,0 +1,231 @@
+@charset "UTF-8";
+/**/
+* {
+  margin: 0;
+  padding: 0; }
+
+/*fuente por defecto de todas las páginas*/
+body {
+  font-family: 'Comfortaa', cursive;
+  font-weight: 700;
+  /*Definición Grid AcercaDe FIN*/ }
+  body main {
+    margin-top: 100px;
+    /*Definicion de cambio de colos al pasar por encima*/ }
+    body main .MainFlex {
+      /*Definición del main de varias paginas*/
+      display: flex;
+      display: -webkit-flex; }
+      body main .MainFlex .ContFlexColumn {
+        /*Contenedor Flex */
+        display: flex;
+        flex-direction: column; }
+        body main .MainFlex .ContFlexColumn .MarginTopBox10 {
+          /*Definición de margen Superior 10px*/
+          margin-top: 10px; }
+        body main .MainFlex .ContFlexColumn .Boton {
+          /*Definicion de foco cuando se selecciona un campo a carga*/ }
+          body main .MainFlex .ContFlexColumn .Boton:hover {
+            transform: scale(1.1); }
+        body main .MainFlex .ContFlexColumn .InputText {
+          /*Definicion de foco cuando se selecciona un campo a carga*/ }
+          body main .MainFlex .ContFlexColumn .InputText:focus {
+            width: 75%;
+            font-size: 18px; }
+      body main .MainFlex .InputText {
+        /*Definición InputText*/
+        padding: 7px 0 7px 0; }
+      body main .MainFlex .Boton {
+        /*Definicion Botones*/
+        background-color: #75c5cd;
+        border: none;
+        padding: 7px 0 7px 0;
+        width: 50%;
+        border-radius: 5px; }
+    body main .ContainerFlex {
+      /*Contenedor Flex*/
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: row; }
+    body main .InlineSection {
+      /*Definiciòn Flex con alineación Central*/
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: row;
+      align-items: center; }
+    body main .ClientesSection {
+      /*Definición de las secciones de la pagina Clientes*/
+      display: inline-block; }
+    body main .ClientesSection {
+      /*Definición de incremento de las imagenes Clientes, al pasar por encima*/ }
+      body main .ClientesSection:hover {
+        transform: scale(1.1); }
+    body main .TitleCenter {
+      /*Definición para Centralizar texto*/
+      text-align: center; }
+    body main .MarginTopLeft30 {
+      /*Definición de margen Superior e izquierdo 30px*/
+      margin-top: 30px;
+      margin-left: 30px; }
+    body main .MarginTopBox30 {
+      /*Definición de margen Superior 30px*/
+      margin-top: 30px; }
+    body main .MarginLeftBox {
+      /*Definición de margen izquiero 30px*/
+      margin-left: 30px; }
+    body main .SectionMVV:hover {
+      background-color: #75c5cd;
+      margin-left: 20px;
+      margin-right: 20px; }
+    body main .mayTam {
+      font-size: 400%; }
+  body .TextCenter {
+    /*Definición para Centralizar texto y cambiarle la fuente*/
+    text-align: center;
+    font-weight: 300; }
+  body footer {
+    /*Definición del margen superior del footer de las paginas*/
+    margin-top: 20px;
+    height: 140px;
+    background-image: linear-gradient(to right, black, #3C423F); }
+  body .ADGrid {
+    /*Definición Grid AcercaDe INICIO*/
+    margin-top: 10px;
+    display: grid;
+    grid-row-gap: 15px;
+    grid-template-areas: 'SADInfoPrin SADInfoPrin SADInfoPrin' 'SADMision SADVision SADValor' 'SADETTitulo SADETTitulo SADETTitulo' 'SADETFundador SADETFundador SADETFundador' 'SADETPrograma SGridvacio SADETMarket'; }
+  body .SADInfoPrin {
+    grid-area: SADInfoPrin;
+    font-weight: 300; }
+  body .SADMision {
+    grid-area: SADMision; }
+  body .SADVision {
+    grid-area: SADVision; }
+  body .SADValor {
+    grid-area: SADValor; }
+  body .SADETTitulo {
+    grid-area: SADETTitulo; }
+  body .SADETFundador {
+    grid-area: SADETFundador;
+    text-align: center; }
+  body .SADETPrograma {
+    grid-area: SADETPrograma;
+    text-align: center; }
+  body .SADETMarket {
+    grid-area: SADETMarket;
+    text-align: center; }
+  body .SGridvacio {
+    grid-area: SGridvacio; }
+  body .textColorBlack {
+    /*Color texto pagina carousel*/
+    color: black; }
+  body .textAparecer {
+    /*Texto de carousel index*/
+    animation-duration: 3s;
+    animation-name: aparecer; }
+
+@keyframes aparecer {
+  /*Definición de la Animación del texto central del Index*/
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+  body .bd-placeholder-img {
+    /*bootstrap modificaciones*/
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    width: 100%;
+    height: 100%; }
+  body .nav-link {
+    /*Definición del nav al pasar por encima*/ }
+    body .nav-link:hover {
+      background-color: black; }
+
+/* Responsive layout - definición de mainflex, cuando el tamaño es menor a 1024*/
+@media (max-width: 1024px) {
+  /*Definición de contenedores en columnas*/
+  .MainFlex {
+    -webkit-flex-direction: column;
+    flex-direction: column; }
+  /*Definición del grid de la pagina acercaDe*/
+  .ADGrid {
+    grid-template-areas: 'SADInfoPrin SADInfoPrin SADInfoPrin' 'SADMision SADVision SADVision'  'SADValor SADValor SADValor' 'SADETTitulo SADETTitulo SADETTitulo' 'SADETFundador SADETFundador SADETFundador' 'SADETPrograma SGridvacio SADETMarket'; } }
+
+/* Responsive layout -  Definición del resto de los contenedores flex, cuando el tamaño es menor a 768*/
+@media (max-width: 768px) {
+  /*Definición de contenedores en columnas*/
+  .ContainerFlex {
+    -webkit-flex-direction: column;
+    flex-direction: column; }
+  /*Definición de contenedores en columnas*/
+  .InlineSection {
+    -webkit-flex-direction: column;
+    flex-direction: column; }
+  /*Definición de imagen no visible*/
+  .ImgNoVisible {
+    display: none; }
+  /*Definición del grid de la pagina acercaDe*/
+  .ADGrid {
+    grid-template-areas: 'SADInfoPrin SADInfoPrin SADInfoPrin' 'SADMision SADMision SADMision'  'SADVision SADVision SADVision' 'SADValor SADValor SADValor' 'SADETTitulo SADETTitulo SADETTitulo' 'SADETFundador SADETFundador SADETFundador' 'SADETPrograma SADETPrograma SADETPrograma' 'SADETMarket SADETMarket SADETMarket'; } }
+
+/* Responsive layout - cuando el tamaño es menor a 768*/
+@media (max-width: 576px) {
+  /*Definición de imagen centra del Header*/
+  .IndexHeader {
+    background: none;
+    height: 250px; }
+  /*Definición de los contenedores del header*/
+  .HeaderNav {
+    -webkit-flex-direction: column;
+    flex-direction: column; }
+  /*Definición del tamaño de las opciones del nav*/
+  .IndexLink {
+    padding: 5px; }
+  /*Definición de esconder el texto del index*/
+  .IndexCentralTitle {
+    display: none; } }
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem; } }
+
+/*Definiciones sass*/
+/*Definicion grilla con for */
+.col-md-1 {
+  width: 250%; }
+
+.col-md-2 {
+  width: 125%; }
+
+.col-md-3 {
+  width: 83.33333%; }
+
+.col-md-4 {
+  width: 62.5%; }
+
+.col-md-5 {
+  width: 50%; }
+
+.col-md-6 {
+  width: 41.66667%; }
+
+.col-md-7 {
+  width: 35.71429%; }
+
+.col-md-8 {
+  width: 31.25%; }
+
+.col-md-9 {
+  width: 27.77778%; }
+
+.col-md-10 {
+  width: 25%; }
+
+.col-md-11 {
+  width: 22.72727%; }
+
+.mx-3 {
+  padding-left: 30px; }
