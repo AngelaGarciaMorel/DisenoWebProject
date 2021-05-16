@@ -14,9 +14,9 @@
 	<!-- CABECERA-->
 <header class="">
 	<!-- NAVEGACIÓN PRINCIPAL-->
-		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
 		    <div class="container-fluid">
-		      	<a class="" href="../index.html"><img class="" src="../media/MarcaClara.png" title="Esta es la marca de la empresa" alt=""></a>
+		      	<a class="" href="../index.html"><img class="" src="../media/MarcaClara.png" alt="Esta es la marca de la empresa"></a>
 		      	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 		        	<span class="navbar-toggler-icon"></span>
 		      	</button>
@@ -39,51 +39,77 @@
 		          		</li>			          				        					          		
 		        	</ul>
 		      	</div>
-		      	<div class="navbar-toggler-right">
-		      		<a href=""><img class="" src="./media/argentina.png" title="Esto indica el idioma" alt=""></a>
-		      	</div>
 		    </div>
 		</nav>
 </header>
 	<!-- Main-->
 	<main >
-		<img src="../media/Servicios.jpg" class="img-fluid" title="Esta es la imagen de contacto">
-		<h1 class="MarginTopBox30">Servicios</h1>
-		<!-- Sección Diseño-->
-		<section class="InlineSection">
-			<img class="ClientesSection" src="../media/Diseño.jpg"  title="Esta es la imagen de diseño">
-			<div>
-				<h2 class="MarginLeftBox">Diseño</h3>
-				<p class="MarginLeftBox">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In tenetur quos quis asperiores nisi maxime explicabo quo exercitationem eligendi commodi excepturi, molestiae optio deleniti, sed illo repudiandae necessitatibus, vitae dolor!</p>
-			</div>			
-		</section>
-		<!-- Sección Comunity Manager-->
-		<section class="InlineSection">
-			<img class="ClientesSection" src="../media/ComunityManager.jpg"  title="Esta es la imagen de Manejo de Comunidades">
-			<div>
-				<h2 class="MarginLeftBox">Manejo de Comunidades</h3>
-				<p class="MarginLeftBox">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In tenetur quos quis asperiores nisi maxime explicabo quo exercitationem eligendi commodi excepturi, molestiae optio deleniti, sed illo repudiandae necessitatibus, vitae dolor!</p>
+		<!-- Imagen Principal Servicios-->
+		<img src="../media/Servicios.jpg" class="img-fluid" alt="Esta es la imagen de contacto">
+		<!-- Título Servicios-->
+		<h1 class="MarginTopBox30 TitleCenter">Servicios</h1>	
+		<!-- Contenedor servicios-->	
+		<div class="container MarginTopBox30">
+			<!-- Primer Registro-->
+			<div class="row">
+				<!-- Sección Diseño-->
+				<section class="col-lg-4 ClientesSection">
+					<img class="rounded-circle  mx-auto d-block imgMen" src="../media/Diseño.jpg"  alt="Esta es la imagen de diseño">
+					<div>
+						<h2 class="MarginLeftBox TitleCenter">Diseño</h3>
+						<p class="MarginLeftBox TitleCenter ">Realizamos todo tipo de diseños, logos, marcas personales, diseño de tarjetas, cartelería y mucho más.</p>
+					</div>			
+				</section>
+				<!-- Sección Comunity Manager-->
+				<section class="col-lg-4 ClientesSection">
+					<img class="rounded-circle  mx-auto d-block imgMen"  src="../media/ComunityManager.jpg"  alt="Esta es la imagen de Manejo de Comunidades">
+					<div>
+						<h2 class="MarginLeftBox TitleCenter">Manejo de Comunidades</h3>
+						<p class="MarginLeftBox TitleCenter">Contamos con profesionales en el área, renemos diferentes tipos de tarifas dependiendo de tus necesisades.</p>
+					</div>
+				</section>
+				<!-- Sección Consultoria-->
+				<section class="col-lg-4 ClientesSection">
+					<img class="rounded-circle  mx-auto d-block imgMen"  src="../media/Consultoria.jpg" alt="Esta es la imagen de Consultoria">
+					<div>
+						<h2 class="MarginLeftBox TitleCenter">Consultoria</h3>
+						<p class="MarginLeftBox TitleCenter">Realizamos consultoría tanto presencial como virtual, contamos con mucha experiencia y nuestros clientes nos avalan.</p>
+					</div>			
+				</section>
 			</div>
-		</section>
-		<!-- Sección Consultoria-->
-		<section class="InlineSection">
-			<img class="ClientesSection" src="../media/Consultoria.jpg"  title="Esta es la imagen de Consultoria">
-			<div>
-				<h2 class="MarginLeftBox">Consultoria</h3>
-				<p class="MarginLeftBox">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In tenetur quos quis asperiores nisi maxime explicabo quo exercitationem eligendi commodi excepturi, molestiae optio deleniti, sed illo repudiandae necessitatibus, vitae dolor!</p>
-			</div>			
-		</section>
+			<!-- Segundo Registro-->
+			 <div class="row ">
+		    	<!-- Primera Sección Apps-->
+			    <section class="col-lg-4 MarginTopBox30 ClientesSection">
+			      	<img src="../media/Apps.jpg" class="rounded-circle  mx-auto d-block imgMen" alt="Esta es la imagen de Apps" >
+			        <h2 class="TitleCenter">Apps a medida</h2>
+			        <p class="TitleCenter">Realizamos aplicaciones a su gusto y necesidad, completamente orientadas a la experiencia de usuario.</p>
+			    </section>
+			    <!-- Segunda Sección BI-->
+			    <section class="col-lg-4 MarginTopBox30 ClientesSection">
+			      	<img src="../media/BusinessIntelligence.jpg" class="rounded-circle mx-auto d-block" alt="Esta es la imagen de Business Intelligence">
+			        <h2 class="TitleCenter">Business Intelligence</h2>
+			        <p class="TitleCenter">Contamos con una extensa experiencia en inteligencia de negocio, armamos tableros a medida.</p>
+			    </section>
+			    <!-- Tercera Sección Paginas Web-->
+			    <section class="col-lg-4 MarginTopBox30 ClientesSection">
+			      	<img src="../media/PaginasWeb.jpg" class="rounded-circle mx-auto d-block" alt="Esta es la imagen de Paginas Web">
+			        <h2 class="TitleCenter">Paginas Web</h2>
+			        <p class="TitleCenter">Realizamos páginas web, completamente orientadas a la experiencia de usuario.</p>
+			    </section>
+		    </div>
+		</div>
 	</main>
 	<!-- Footer-->
 	<footer class="TextCenter">
 			<!-- Marca Tamaño Medio-->
-			<img src="../media/MarcaMediana.png"title="Esta es la marca de la empresa">
+			<img src="../media/MarcaMediana.png" alt="Esta es la marca mediana de la empresa">
 			<!--Links Social Media-->
 			<div>
-				<img src="../media/linkedin.png" title="Este es el link a linkedin">
-				<img src="../media/instagram.png" title="Este es el link a Instagram">
-				<img src="../media/facebook.png" title="Este es el link a Facebook">
-				<img src="../media/twitter.png" title="Este es el link a Twitter">	
+				<img src="../media/linkedin.png" alt="Este es el link a linkedin">
+				<img src="../media/instagram.png" alt="Este es el link a Instagram">
+				<img src="../media/facebook.png" alt="Este es el link a Facebook">
+				<img src="../media/twitter.png" alt="Este es el link a Twitter">	
 			</div>		
 	</footer>
 	<script src="../js/bootstrap.bundle.min.js"></script>

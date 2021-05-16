@@ -6,17 +6,19 @@
 	<!-- Fuente Bree Serif y Comfortaa-->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+	<!-- CSS Bootstrap-->
 	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<!-- CSS Bootstrap-->
 	<link rel="stylesheet" href="../css/style.css">
-	<title>Servicios</title>
+	<title>Productos</title>
 </head>
 <body>
 	<!-- CABECERA-->
-<header class="">
+	<header class="">
 	<!-- NAVEGACIÓN PRINCIPAL-->
-		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
 		    <div class="container-fluid">
-		      	<a class="" href="../index.html"><img class="" src="../media/MarcaClara.png" title="Esta es la marca de la empresa" alt=""></a>
+		      	<a class="" href="../index.html"><img class="" src="../media/MarcaClara.png" alt="Esta es la marca de la empresa"></a>
 		      	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 		        	<span class="navbar-toggler-icon"></span>
 		      	</button>
@@ -39,53 +41,61 @@
 		          		</li>			          				        					          		
 		        	</ul>
 		      	</div>
-		      	<div class="navbar-toggler-right">
-		      		<a href=""><img class="" src="./media/argentina.png" title="Esto indica el idioma" alt=""></a>
-		      	</div>
 		    </div>
 		</nav>
 	</header>
 	<!-- Main-->
 	<main class="PageMain">
-		<img src="../media/Productos.jpg" class="img-fluid" title="Esta es la imagen de contacto">
-		<h1 class="MarginTopBox30">Productos</h1>
-		<!-- Sección Producto ControlE-->
-		<section class="InlineSection MarginTopBox30">
-			<img src="../media/ControlENegro.png" class="ClientesSection" title="Esta es la imagen de contacto">
-			<div>
-				<h2 class="MarginLeftBox">CtrlE</h3>
-				<p class="MarginLeftBox Text300">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In tenetur quos quis asperiores nisi maxime explicabo quo exercitationem eligendi commodi excepturi, molestiae optio deleniti, sed illo repudiandae necessitatibus, vitae dolor! Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Corporis ab sed accusamus veniam, natus quod officiis modi! Commodi, consequuntur assumenda, cupiditate autem saepe tempora esse facilis fuga cum. Voluptatum, perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sapiente dolorum officiis, maxime tempore, eius iusto temporibus error, at rem beatae ullam! Eligendi reiciendis illum atque, non qui illo quo!</p>
-			</div>	
-		</section>
-		<!-- Sección Producto TurOn-->
-		<section class="InlineSection MarginTopBox30">
-			<img src="../media/TurOn.png" class="ClientesSection" title="Esta es la imagen de contacto">
-			<div>
-				<h2 class="MarginLeftBox">TurOn</h3>
-				<p class="MarginLeftBox Text300">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In tenetur quos quis asperiores nisi maxime explicabo quo exercitationem eligendi commodi excepturi, molestiae optio deleniti, sed illo repudiandae necessitatibus, vitae dolor! Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Corporis ab sed accusamus veniam, natus quod officiis modi! Commodi, consequuntur assumenda, cupiditate autem saepe tempora esse facilis fuga cum. Voluptatum, perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sapiente dolorum officiis, maxime tempore, eius iusto temporibus error, at rem beatae ullam! Eligendi reiciendis illum atque, non qui illo quo!</p>
-			</div>	
-		</section>	
-		<!-- Sección Producto BusDoc-->
-		<section class="InlineSection MarginTopBox30">
-			<img src="../media/BusDoc.png" class="ClientesSection" title="Esta es la imagen de contacto">
-			<div>
-				<h2 class="MarginLeftBox">BusDoc</h3>
-				<p class="MarginLeftBox Text300">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In tenetur quos quis asperiores nisi maxime explicabo quo exercitationem eligendi commodi excepturi, molestiae optio deleniti, sed illo repudiandae necessitatibus, vitae dolor! Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Corporis ab sed accusamus veniam, natus quod officiis modi! Commodi, consequuntur assumenda, cupiditate autem saepe tempora esse facilis fuga cum. Voluptatum, perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sapiente dolorum officiis, maxime tempore, eius iusto temporibus error, at rem beatae ullam! Eligendi reiciendis illum atque, non qui illo quo!</p>
-			</div>	
-		</section>			
+		<!-- Imagen Principal Productos-->
+		<img src="../media/Productos.png" class="img-fluid" alt="Esta es la imagen de Productos">
+		<!-- Título Productos-->
+		<h1 class="MarginTopBox30 TitleCenter">Productos</h1>
+		<!-- Contenedor Productos -->
+		<div class="container MarginTopBox30">
+			<div class="row">
+				<!-- Sección Producto ControlE-->
+				<section class="col-lg-4 ClientesSection MarginTopBox30">
+					<img src="../media/ControlENegro.png" alt="Esta es la imagen del Producto CtrlE">
+					<div>
+						<h2 class="MarginLeftBox">CtrlE</h3>
+						<p class="MarginLeftBox">CtrlE es un potente sistema destinado al manejo de logística, desde la carga de datos hasta el monitoreo de cada uno de los envíos realizados. Cuenta con una amplia gama de reportes, es escalable, con una interfaz amigable y muy accesible. Esta disponible en formato web.</p>
+					</div>	
+				</section>
+				<!-- Sección Producto TurOn-->
+				<section class="col-lg-4 ClientesSection MarginTopBox30">
+					<img src="../media/TurOn.png"  alt="Esta es la imagen del Producto TurOn">
+					<div>
+						<h2 class="MarginLeftBox">TurOn</h3>
+						<p class="MarginLeftBox">TurOn es un potente sistema destinado a ayudar a cada persona que necesita realizar un viaje por primera vez. Contiene guías para no olvidarse de ningún detalle. Tambien contiene una comunidad en la cual se puede buscar amigos de viajes. 
+						El sistema cuenta con mucha información que se actualiza constantemente, gracias a los integrantes de la comunidad. Esta disponible en formato web y tiene un costo muy bajo.</p>
+					</div>	
+				</section>	
+				<!-- Sección Producto BusDoc-->
+				<section class="col-lg-4 ClientesSection MarginTopBox30">
+					<img src="../media/BusDoc.png" alt="Esta es la imagen de BusDoc">
+					<div>
+						<h2 class="MarginLeftBox">BusDoc</h3>
+						<p class="MarginLeftBox">BusDoc es un potente sistema destinado a ayudar a cada persona que necesita realizar un trámite. Contiene la guía de lugares a los que se debe dirigir y la documentación necesaria. Tambien contiene una comunidad en la cual se puede buscar un amigo de trámites presenciales. 
+						El sistema cuenta con mucha información que se actualiza constantemente, gracias a los integrantes de la comunidad. Esta disponible en formato web y es completamente gratuito.</p>
+					</div>	
+				</section>	
+			</div>
+		</div>
+	
 	</main>
 	<!-- Footer-->
 	<footer class="TextCenter">
 			<!-- Marca Tamaño Medio-->
-			<img src="../media/MarcaMediana.png"title="Esta es la marca de la empresa">
+			<img src="../media/MarcaMediana.png" alt="Esta es la marca mediana de la empresa">
 			<!--Links Social Media-->
 			<div>
-				<img src="../media/linkedin.png" title="Este es el link a linkedin">
-				<img src="../media/instagram.png" title="Este es el link a Instagram">
-				<img src="../media/facebook.png" title="Este es el link a Facebook">
-				<img src="../media/twitter.png" title="Este es el link a Twitter">	
+				<img src="../media/linkedin.png" alt="Este es el link a linkedin">
+				<img src="../media/instagram.png" alt="Este es el link a Instagram">
+				<img src="../media/facebook.png" alt="Este es el link a Facebook">
+				<img src="../media/twitter.png" alt="Este es el link a Twitter">	
 			</div>		
 	</footer>
+	<!-- JS Bootstrap-->	
 	<script src="../js/bootstrap.bundle.min.js"></script>	
 </body>
 </html>

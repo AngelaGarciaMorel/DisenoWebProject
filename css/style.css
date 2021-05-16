@@ -7,8 +7,7 @@
 /*fuente por defecto de todas las páginas*/
 body {
   font-family: 'Comfortaa', cursive;
-  font-weight: 700;
-  /*Definición Grid AcercaDe FIN*/ }
+  font-weight: 700; }
   body main {
     margin-top: 100px;
     /*Definicion de cambio de colos al pasar por encima*/ }
@@ -78,7 +77,11 @@ body {
       margin-left: 20px;
       margin-right: 20px; }
     body main .mayTam {
-      font-size: 400%; }
+      font-size: 200%; }
+    body main .Interlin-List {
+      margin-top: 20px; }
+    body main .containerColor2 {
+      background-color: #00bbb6; }
   body .TextCenter {
     /*Definición para Centralizar texto y cambiarle la fuente*/
     text-align: center;
@@ -88,41 +91,9 @@ body {
     margin-top: 20px;
     height: 140px;
     background-image: linear-gradient(to right, black, #3C423F); }
-  body .ADGrid {
-    /*Definición Grid AcercaDe INICIO*/
-    margin-top: 10px;
-    display: grid;
-    grid-row-gap: 15px;
-    grid-template-areas: 'SADInfoPrin SADInfoPrin SADInfoPrin' 'SADMision SADVision SADValor' 'SADETTitulo SADETTitulo SADETTitulo' 'SADETFundador SADETFundador SADETFundador' 'SADETPrograma SGridvacio SADETMarket'; }
-  body .SADInfoPrin {
-    grid-area: SADInfoPrin;
-    font-weight: 300; }
-  body .SADMision {
-    grid-area: SADMision; }
-  body .SADVision {
-    grid-area: SADVision; }
-  body .SADValor {
-    grid-area: SADValor; }
-  body .SADETTitulo {
-    grid-area: SADETTitulo; }
-  body .SADETFundador {
-    grid-area: SADETFundador;
-    text-align: center; }
-  body .SADETPrograma {
-    grid-area: SADETPrograma;
-    text-align: center; }
-  body .SADETMarket {
-    grid-area: SADETMarket;
-    text-align: center; }
-  body .SGridvacio {
-    grid-area: SGridvacio; }
-  body .textColorBlack {
-    /*Color texto pagina carousel*/
-    color: black; }
-  body .textAparecer {
-    /*Texto de carousel index*/
-    animation-duration: 3s;
-    animation-name: aparecer; }
+    body footer .textColorWhite {
+      color: white;
+      font-size: 0.6rem; }
 
 @keyframes aparecer {
   /*Definición de la Animación del texto central del Index*/
@@ -144,15 +115,60 @@ body {
     body .nav-link:hover {
       background-color: black; }
 
+.ADGrid {
+  /*Definición Grid AcercaDe INICIO*/
+  margin-top: 10px;
+  display: grid;
+  grid-row-gap: 15px;
+  grid-template-areas: 'SADInfoPrin SADInfoPrin SADInfoPrin' 'SADMision SADVision SADValor' 'SADETTitulo SADETTitulo SADETTitulo' 'SADETFundador SADETFundador SADETFundador' 'SADETPrograma SGridvacio SADETMarket'; }
+
+.SADInfoPrin {
+  grid-area: SADInfoPrin;
+  font-weight: 300; }
+
+.SADMision {
+  grid-area: SADMision; }
+
+.SADVision {
+  grid-area: SADVision; }
+
+.SADValor {
+  grid-area: SADValor; }
+
+.SADETTitulo {
+  grid-area: SADETTitulo; }
+
+.SADETFundador {
+  grid-area: SADETFundador;
+  text-align: center; }
+
+.SADETPrograma {
+  grid-area: SADETPrograma;
+  text-align: center; }
+
+.SADETMarket {
+  grid-area: SADETMarket;
+  text-align: center; }
+
+.SGridvacio {
+  grid-area: SGridvacio; }
+
+/*Definición Grid AcercaDe FIN*/
+.textColorBlack {
+  /*Color texto pagina carousel*/
+  color: black; }
+
+.textAparecer {
+  /*Texto de carousel index*/
+  animation-duration: 3s;
+  animation-name: aparecer; }
+
 /* Responsive layout - definición de mainflex, cuando el tamaño es menor a 1024*/
 @media (max-width: 1024px) {
   /*Definición de contenedores en columnas*/
   .MainFlex {
     -webkit-flex-direction: column;
-    flex-direction: column; }
-  /*Definición del grid de la pagina acercaDe*/
-  .ADGrid {
-    grid-template-areas: 'SADInfoPrin SADInfoPrin SADInfoPrin' 'SADMision SADVision SADVision'  'SADValor SADValor SADValor' 'SADETTitulo SADETTitulo SADETTitulo' 'SADETFundador SADETFundador SADETFundador' 'SADETPrograma SGridvacio SADETMarket'; } }
+    flex-direction: column; } }
 
 /* Responsive layout -  Definición del resto de los contenedores flex, cuando el tamaño es menor a 768*/
 @media (max-width: 768px) {
@@ -164,33 +180,12 @@ body {
   .InlineSection {
     -webkit-flex-direction: column;
     flex-direction: column; }
-  /*Definición de imagen no visible*/
-  .ImgNoVisible {
+  /*Definición de no visible*/
+  .NoVisible {
     display: none; }
   /*Definición del grid de la pagina acercaDe*/
   .ADGrid {
     grid-template-areas: 'SADInfoPrin SADInfoPrin SADInfoPrin' 'SADMision SADMision SADMision'  'SADVision SADVision SADVision' 'SADValor SADValor SADValor' 'SADETTitulo SADETTitulo SADETTitulo' 'SADETFundador SADETFundador SADETFundador' 'SADETPrograma SADETPrograma SADETPrograma' 'SADETMarket SADETMarket SADETMarket'; } }
-
-/* Responsive layout - cuando el tamaño es menor a 768*/
-@media (max-width: 576px) {
-  /*Definición de imagen centra del Header*/
-  .IndexHeader {
-    background: none;
-    height: 250px; }
-  /*Definición de los contenedores del header*/
-  .HeaderNav {
-    -webkit-flex-direction: column;
-    flex-direction: column; }
-  /*Definición del tamaño de las opciones del nav*/
-  .IndexLink {
-    padding: 5px; }
-  /*Definición de esconder el texto del index*/
-  .IndexCentralTitle {
-    display: none; } }
-
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem; } }
 
 /*Definiciones sass*/
 /*Definicion grilla con for */
