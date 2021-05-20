@@ -114,6 +114,8 @@ body {
     /*Definición del nav al pasar por encima*/ }
     body .nav-link:hover {
       background-color: black; }
+  body .img-fluid {
+    width: 100%; }
 
 .ADGrid {
   /*Definición Grid AcercaDe INICIO*/
